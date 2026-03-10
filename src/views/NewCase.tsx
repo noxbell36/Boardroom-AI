@@ -27,16 +27,16 @@ export default function NewCase({ setCurrentView }: { setCurrentView: (view: str
         </div>
       </header>
 
-      <div className="mx-auto py-10 px-6 max-w-5xl w-full">
+      <div className="mx-auto py-10 px-6 max-w-4xl w-full">
         {/* Progress Indicator */}
-        <div className="mb-12">
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex flex-col gap-0.5">
-              <span className="text-[10px] font-bold text-blue-600 uppercase tracking-widest">STEP 01 / 04</span>
+        <div className="mb-10">
+          <div className="flex items-center justify-between mb-5">
+            <div className="flex flex-col gap-1">
+              <span className="text-[11px] font-bold text-blue-600 uppercase tracking-widest">STEP 01 / 04</span>
               <h3 className="text-lg font-bold text-slate-800">기본 정보 입력</h3>
             </div>
-            <div className="flex flex-col items-end gap-1">
-              <span className="text-xs font-bold text-slate-500 font-mono">진행률 25%</span>
+            <div className="flex flex-col items-end gap-1.5">
+              <span className="text-[13px] font-bold text-slate-500 font-mono">진행률 25%</span>
               <div className="w-48 bg-slate-200 h-1.5 rounded-full overflow-hidden">
                 <div className="bg-blue-600 h-full w-1/4 rounded-full transition-all duration-500"></div>
               </div>
@@ -44,16 +44,16 @@ export default function NewCase({ setCurrentView }: { setCurrentView: (view: str
           </div>
           <div className="grid grid-cols-4 gap-0">
             <div className="flex flex-col gap-2 border-t-4 border-blue-600 pt-3">
-              <span className="text-xs font-bold text-blue-600">01. 기본 정보</span>
+              <span className="text-[13px] font-bold text-blue-600">01. 기본 정보</span>
             </div>
             <div className="flex flex-col gap-2 border-t-4 border-slate-200 pt-3">
-              <span className="text-xs font-bold text-slate-400">02. 시장 정보</span>
+              <span className="text-[13px] font-bold text-slate-400">02. 시장 정보</span>
             </div>
             <div className="flex flex-col gap-2 border-t-4 border-slate-200 pt-3">
-              <span className="text-xs font-bold text-slate-400">03. 재무 정보</span>
+              <span className="text-[13px] font-bold text-slate-400">03. 재무 정보</span>
             </div>
             <div className="flex flex-col gap-2 border-t-4 border-slate-200 pt-3">
-              <span className="text-xs font-bold text-slate-400">04. 전략적 맥락</span>
+              <span className="text-[13px] font-bold text-slate-400">04. 전략적 맥락</span>
             </div>
           </div>
         </div>
@@ -69,15 +69,15 @@ export default function NewCase({ setCurrentView }: { setCurrentView: (view: str
               
               <div className="grid grid-cols-2 gap-6">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-600 flex items-center gap-1">
+                  <label className="text-[13px] font-bold text-slate-600 flex items-center gap-1">
                     프로젝트 명
                     <Info size={14} className="text-slate-400 cursor-help" />
                   </label>
-                  <input type="text" className="w-full rounded border-slate-200 focus:ring-1 focus:ring-blue-600 focus:border-blue-600 text-sm py-2 px-3 h-10 outline-none border" placeholder="예: 차세대 AI 반도체 벤처 투자" />
+                  <input type="text" className="w-full rounded border-slate-200 focus:ring-1 focus:ring-blue-600 focus:border-blue-600 text-[14px] py-2 px-3 h-10 outline-none border" placeholder="예: 차세대 AI 반도체 벤처 투자" />
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-600">산업 분야</label>
-                  <select className="w-full rounded border-slate-200 focus:ring-1 focus:ring-blue-600 focus:border-blue-600 text-sm py-2 px-3 h-10 outline-none border bg-white">
+                  <label className="text-[13px] font-bold text-slate-600">산업 분야</label>
+                  <select className="w-full rounded border-slate-200 focus:ring-1 focus:ring-blue-600 focus:border-blue-600 text-[14px] py-2 px-3 h-10 outline-none border bg-white">
                     <option>산업을 선택하세요</option>
                     <option>IT / 테크</option>
                     <option>제조 / 하드웨어</option>
@@ -86,27 +86,27 @@ export default function NewCase({ setCurrentView }: { setCurrentView: (view: str
                   </select>
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-600">투자 지역</label>
-                  <input type="text" className="w-full rounded border-slate-200 focus:ring-1 focus:ring-blue-600 focus:border-blue-600 text-sm py-2 px-3 h-10 outline-none border" placeholder="예: 대한민국, 미국 실리콘밸리 등" />
+                  <label className="text-[13px] font-bold text-slate-600">투자 지역</label>
+                  <input type="text" className="w-full rounded border-slate-200 focus:ring-1 focus:ring-blue-600 focus:border-blue-600 text-[14px] py-2 px-3 h-10 outline-none border" placeholder="예: 대한민국, 미국 실리콘밸리 등" />
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-600">투자 유형</label>
+                  <label className="text-[13px] font-bold text-slate-600">투자 유형</label>
                   <div className="grid grid-cols-2 gap-2">
                     <label className="flex items-center gap-2 px-3 h-10 border border-slate-200 rounded cursor-pointer hover:bg-slate-50 transition-colors">
                       <input type="radio" name="inv_type" className="w-3.5 h-3.5 text-blue-600 focus:ring-blue-600 border-slate-300" />
-                      <span className="text-xs font-medium">Startup</span>
+                      <span className="text-[13px] font-medium">Startup</span>
                     </label>
                     <label className="flex items-center gap-2 px-3 h-10 border border-slate-200 rounded cursor-pointer hover:bg-slate-50 transition-colors">
                       <input type="radio" name="inv_type" className="w-3.5 h-3.5 text-blue-600 focus:ring-blue-600 border-slate-300" />
-                      <span className="text-xs font-medium">JV (합작법인)</span>
+                      <span className="text-[13px] font-medium">JV (합작법인)</span>
                     </label>
                     <label className="flex items-center gap-2 px-3 h-10 border border-slate-200 rounded cursor-pointer hover:bg-slate-50 transition-colors">
                       <input type="radio" name="inv_type" className="w-3.5 h-3.5 text-blue-600 focus:ring-blue-600 border-slate-300" />
-                      <span className="text-xs font-medium">신사업</span>
+                      <span className="text-[13px] font-medium">신사업</span>
                     </label>
                     <label className="flex items-center gap-2 px-3 h-10 border border-slate-200 rounded cursor-pointer hover:bg-slate-50 transition-colors">
                       <input type="radio" name="inv_type" className="w-3.5 h-3.5 text-blue-600 focus:ring-blue-600 border-slate-300" />
-                      <span className="text-xs font-medium">M&A</span>
+                      <span className="text-[13px] font-medium">M&A</span>
                     </label>
                   </div>
                 </div>
@@ -115,11 +115,11 @@ export default function NewCase({ setCurrentView }: { setCurrentView: (view: str
             
             <hr className="border-slate-100" />
             
-            <div className="bg-slate-50 border border-slate-100 rounded-lg p-3.5 flex gap-3 items-center">
+            <div className="bg-slate-50 border border-slate-100 rounded-lg p-4 flex gap-3 items-center">
               <Info className="text-blue-600 shrink-0" size={20} />
-              <div className="space-y-0.5">
-                <p className="text-xs font-bold text-blue-600 uppercase tracking-tight">입력 가이드</p>
-                <p className="text-[11px] text-slate-600 leading-normal">다음 단계부터는 시장, 재무, 전략 정보를 입력합니다. AI가 입력된 데이터를 바탕으로 투자 타당성 보고서를 생성하므로 정확한 수치 입력이 권장됩니다.</p>
+              <div className="space-y-1">
+                <p className="text-[13px] font-bold text-blue-600 uppercase tracking-tight">입력 가이드</p>
+                <p className="text-[13px] text-slate-600 leading-relaxed">다음 단계부터는 시장, 재무, 전략 정보를 입력합니다. AI가 입력된 데이터를 바탕으로 투자 타당성 보고서를 생성하므로 정확한 수치 입력이 권장됩니다.</p>
               </div>
             </div>
           </div>
@@ -140,19 +140,19 @@ export default function NewCase({ setCurrentView }: { setCurrentView: (view: str
         {/* Additional Preview Tabs */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 opacity-50 select-none">
           <div className="p-4 border border-slate-200 rounded-xl bg-white/50">
-            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Coming Next</p>
-            <p className="text-sm font-bold text-slate-500">시장 정보 분석</p>
-            <p className="text-xs text-slate-400 mt-1">CAGR, 경쟁사 현황...</p>
+            <p className="text-[11px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Coming Next</p>
+            <p className="text-[14px] font-bold text-slate-500">시장 정보 분석</p>
+            <p className="text-[13px] text-slate-400 mt-1">CAGR, 경쟁사 현황...</p>
           </div>
           <div className="p-4 border border-slate-200 rounded-xl bg-white/50">
-            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Planned Step</p>
-            <p className="text-sm font-bold text-slate-500">재무 타당성 검토</p>
-            <p className="text-xs text-slate-400 mt-1">ROI, 투자 규모...</p>
+            <p className="text-[11px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Planned Step</p>
+            <p className="text-[14px] font-bold text-slate-500">재무 타당성 검토</p>
+            <p className="text-[13px] text-slate-400 mt-1">ROI, 투자 규모...</p>
           </div>
           <div className="p-4 border border-slate-200 rounded-xl bg-white/50">
-            <p className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Final Step</p>
-            <p className="text-sm font-bold text-slate-500">전략적 시너지 도출</p>
-            <p className="text-xs text-slate-400 mt-1">리스크 및 적합성...</p>
+            <p className="text-[11px] font-bold text-slate-400 uppercase tracking-tighter mb-1">Final Step</p>
+            <p className="text-[14px] font-bold text-slate-500">전략적 시너지 도출</p>
+            <p className="text-[13px] text-slate-400 mt-1">리스크 및 적합성...</p>
           </div>
         </div>
       </div>
